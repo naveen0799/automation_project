@@ -1,5 +1,4 @@
 version: '3'
-
 networks:
   web:
     external: true
@@ -12,11 +11,6 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/vms
-    labels:
-      - traefik.http.routers.20a91f0019.rule=Host(`20a91f0019.platfom.live`)
-      - traefik.http.routers.20a91f0019.tls=true
-      - traefik.http.routers.20a91f0019.tls.certresolver=lets-encrypt
-      - traefik.port=8000  
-    networks:
-      - web
-      - internal  
+    ports:
+      - 8000:8000
+  
