@@ -7,7 +7,7 @@ environment {
         def prod = "cd /home/ubuntu/automation_project && \
             sudo docker volume prune -f && sudo docker system prune -af && sudo docker-compose down && sudo docker-compose pull && sudo docker-compose up -d && sudo docker ps --latest && \
             pwd "
-        def discordURL = ''
+        def discordURL = 'https://discordapp.com/api/webhooks/1106891112418914385/NfZ6sa6p5uVujQGyf1jMM72wF5lrrYFE2wqjMZgtno9eMglU8tqduc-cWTImY_cms3y7'
         // URL of image png/jpg to place to right of Discord build notifications
         def discordTImage = 'http://assets.stickpng.com/images/58480984cef1014c0b5e4902.png'    
         def discordImage = 'https://www.nicepng.com/png/full/362-3624869_icon-success-circle-green-tick-png.png'
