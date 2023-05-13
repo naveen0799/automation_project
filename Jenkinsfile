@@ -2,9 +2,9 @@
     agent any
 
 environment {
-		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
+		
 
-        def prod = "cd /home/ubuntu/beumont && \
+        def prod = "cd /home/ubuntu/automation_project && \
             sudo docker volume prune -f && sudo docker system prune -af && sudo docker-compose down && sudo docker-compose pull && sudo docker-compose up -d && sudo docker ps --latest && \
             pwd "
         def discordURL = ''
