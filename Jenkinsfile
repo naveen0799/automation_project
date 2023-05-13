@@ -94,20 +94,20 @@ environment {
 
 
 
-        stage('Building Master Container') {
-            when {
-                branch 'main'
-            }
-            steps {
+        // stage('Building Master Container') {
+        //     when {
+        //         branch 'main'
+        //     }
+        //     steps {
 
-             sshagent(['SERVER']) {
-                 sh "ssh -o StrictHostKeyChecking=no -l ubuntu 15.206.125.7  'whoami'"
-                 sh "ssh -o StrictHostKeyChecking=no -l ubuntu 15.206.125.7  '${prod}'"
+        //      sshagent(['SERVER']) {
+        //          sh "ssh -o StrictHostKeyChecking=no -l ubuntu 15.206.125.7  'whoami'"
+        //          sh "ssh -o StrictHostKeyChecking=no -l ubuntu 15.206.125.7  '${prod}'"
 
 
-                    }
-         }
-        }
+        //             }
+        //  }
+        // }
 
 
 
