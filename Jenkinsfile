@@ -83,7 +83,11 @@ environment {
                 
                 sh """cat  docker-compose.yml"""
 
-                sh """ docker-compose build"""
+                //sh """ docker-compose build"""
+
+                sh """ docker-compose down"""
+                
+                sh """ docker-compose up -d --force-recreate --no-deps --build"""
 
                 sh """ echo "Build Succesfully" """
 
