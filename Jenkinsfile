@@ -67,7 +67,7 @@ environment {
                 script{           
                     discordSend webhookURL: discordURL,
                     color: 'green',
-                    title: "Hello, **Beumont** Team!",
+                    title: "Hello, **naveen** Team!",
                     // title: discordTitle,
                     link: "$BUILD_URL",
                     result: currentBuild.currentResult ,
