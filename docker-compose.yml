@@ -12,5 +12,5 @@ services:
     volumes:
       - .:/vms
     ports:
-      - 80:8000
+      - 80:80
   
