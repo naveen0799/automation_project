@@ -8,9 +8,9 @@ networks:
 services:
   vms:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:80
     volumes:
       - .:/vms
     ports:
-      - 8000:80
+      - 80:80
   
